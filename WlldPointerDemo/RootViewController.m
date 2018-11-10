@@ -34,6 +34,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"1"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"1"];
+        cell.textLabel.text = @"点此push到新页面";
     }
     return cell;
 }
